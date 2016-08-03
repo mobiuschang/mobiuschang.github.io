@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Winston's Home Portal</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Winston's personal home page">
+  <meta name="author" content="Winston Chang">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  
+  <link rel = "stylesheet" href = "./styles/main.css">
+  <link rel="stylesheet" href="libs/animate.css">
+
+  
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+
+      </button>
+      <a class="navbar-brand" href="#">Winston Chang</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#about-section" class = "nav-link">About</a></li>
+          <li><a href="#projectList" class = "nav-link">Project</a></li>
+          <li><a href="#adventure-section" class = "nav-link">Adventure</a></li>
+          <li><a href="#contact" class = "nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+</nav>
+ <div class="headBanner">
+    <div id = "banner-element" text-center>
+       <img class = "profile-pic img-circle" src = "images/profile.jpg">
+       <h3>Adventurist</h3>
+       <h3>Lifelong Learner</h3>
+       <h3>Javascript Enthusiast</h3>
+    </div> 
+ </div>
+
+<div class= "container" id = "about-section">
+   <h1 id = "about-heading" class = "animated zoomInRight">Little Bit About Me</h1>
+   <hr class = "about-heading-underline">
+ 
+    
+    <img id = "collage" src = "images/collage.jpg">
+  
+   <div id = "about-content" >
+     <p>I am software engineer by trade and adventurer at heart. My main focus is web applications. It is funny that back in College, I used to hate Javascript. Coming from Java background, Javascript just seemed weird. <span id = "code-snippet">typeOf null === "object"??? </span> What kind of witchcraft is this? After working as Automation Engineer at Jibe Inc., I saw how dynamic and powerful Javascript can be. Since then, I have become a Javascript enthusiast. And I have learned to embrace the quirky side of Javascript </p>
+     <p> When I am not coding, I enjoy playing sports, outdoor activities and weight lifting. I also like exploring my neighborhood and the surrounding areas as well. My preferred method of transportation is walking so I get to see more on my way to the destination. As a personal challenge, I walked/ran around the <a class = "manhattan-popover" rel = "popover" data-img = "images/manhattan-run-map.jpg"> Manhattan island </a> back in 2015. I never ran more than 10 miles before and I managed to walk/run <strong>32 miles</strong> on that day.
+  </div>
+</div>
+
+<div id="projectList" class="container-fluid">
+  
+  <h1 id = "projectList-heading" class = "section-separator-top">Projects</h1>
+
+  <!-- Begin row class -->
+  <div class="row">
+    <div class="col-sm-2">
+    </div>
+
+    <!-- Begin col Project 1 -->
+    <div class="col-sm-4"> 
+               
+      <div class="thumbnail project-thumbnail-1">
+          <div class="caption animated">
+                <h4 class = "caption-heading animated">Random Quote Generator</h4>
+                <p>Generate and Tweet random quotes from famous people and movies</p>
+                <a class="btn btn-md btn-success" href="http://codepen.io/mobiuschang/pen/XdqKWe" target = _blank>
+                  <i class="fa fa-external-link" aria-hidden="true"></i> CodePen Demo</a>
+
+          </div>
+            <img src="images/projects/quote-generator.jpg" alt="...">
+        </div>
+    
+    </div> 
+    <!-- End col Project 1 -->
+
+     <!-- Begin col Project 2 -->
+    <div class="col-sm-4"> 
+              
+      <div class="thumbnail project-thumbnail-2">
+          <div class="caption animated">
+                <h4 class = "caption-heading animated">Local Weather App</h4>
+                <p>Display basic weather info based on user's location</p>
+                <a class="btn btn-md btn-success" href="http://codepen.io/mobiuschang/pen/PzGoag" target = _blank>
+                  <i class="fa fa-external-link" aria-hidden="true"></i> CodePen Demo</a>
+
+          </div>
+            <img src="images/projects/local-weather.jpg" alt="...">
+        </div>
+    </div>
+    <!-- End col Project 2 -->
+
+    <div class="col-sm-2">
+    </div>
+  </div>
+  <!-- End row class -->
+
+  <!-- Begin row class -->
+  <div class="row">
+    <div class="col-sm-2">
+    </div>
+    
+     <!-- Begin col Project 3 -->
+    <div class="col-sm-4"> 
+             
+      <div class="thumbnail project-thumbnail-3">
+          <div class="caption animated">
+                <h4 class = "caption-heading animated">Wikipedia Clone</h4>
+                <p class = "animated">Use Wikipedia Api to implement search</p>
+                <a class="btn btn-md btn-success animated" href="http://codepen.io/mobiuschang/pen/XKRJBN" target = _blank>
+                  <i class="fa fa-external-link" aria-hidden="true"></i> CodePen Demo</a>
+
+          </div>
+            <img class = "animated" src="images/projects/wiki-clone.jpg" alt="...">
+      </div>
+    </div>
+    <!-- End col Project 3 -->
+    
+
+    <!-- Begin col Project 4 -->
+    <div class="col-sm-4"> 
+               
+      <div class="thumbnail project-thumbnail-4">
+          <div class="caption animated">
+                <h4 class = "caption-heading animated">twitchTV Channel List</h4>
+                <p class = "animated">Use twitchTV API to display channel status</p>
+                <a class="btn btn-md btn-success animated" href="http://codepen.io/mobiuschang/pen/dXZzpk" target = _blank>
+                  <i class="fa fa-external-link" aria-hidden="true"></i> CodePen Demo</a>
+
+          </div>
+            <img class = "animated" src="images/projects/twitchTv.jpg" alt="...">
+      </div>
+    </div>
+    <!-- End col Project 4 -->
+
+    <div class="col-sm-2 ">
+    </div>
+    
+  </div>
+  <!-- End row class -->
+
+ <div class = "section-separator-bottom"></div>
+
+</div>
+<!-- End container-fluid class -->
+
+
+
+<div id = "adventure-section"  class="container-fluid ">
+  
+  <h1 class = "container-heading section-separator-top">Adventure Time</h1>
+  <div class = "row">
+
+    <div class="col-sm-2 "></div>
+
+    <div class="col-sm-4 adventure-item">     
+      <div class="thumbnail adventure-thumbnail">
+            <img id = "adventure-cali-thumbnail-pic" class = "adventure-thumbnail-pic" src="images/adventure/california/california_thumbnail.jpeg"  data-toggle="modal" data-target=".adventure-california-modal" alt="...">
+            <div id = "adventure-cali-thumbnail-caption" class="carousel-caption adventure-thumbnail-caption">
+              <h1 data-toggle="modal" data-target=".adventure-california-modal">California</h1>
+            </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4 adventure-item">    
+      <div class="thumbnail adventure-thumbnail">
+            <img id = "adventure-shanghai-thumbnail-pic" class = "adventure-thumbnail-pic" src="images/adventure/shanghai/shanghai_thumbnail.jpeg"  data-toggle="modal" data-target=".adventure-shanghai-modal" alt="...">
+            <div id = "adventure-shanghai-thumbnail-caption"  class="carousel-caption adventure-thumbnail-caption">
+              <h1  data-toggle="modal" data-target=".adventure-shanghai-modal">Shang Hai</h1>
+            </div>
+      </div>
+    </div>
+
+  </div>
+
+    <div class = "row">
+
+      <div class="col-sm-2 "></div>
+
+      <div class="col-sm-4 adventure-item">        
+        <div class="thumbnail adventure-thumbnail">
+              <img id = "adventure-hongkong-thumbnail-pic"  class = "adventure-thumbnail-pic" src="images/adventure/hongkong/hongkong_thumbnail.jpeg"  data-toggle="modal" data-target=".adventure-hongkong-modal" alt="...">
+              <div id = "adventure-hongkong-thumbnail-caption"  class="carousel-caption adventure-thumbnail-caption">
+                <h1  data-toggle="modal" data-target=".adventure-hongkong-modal">Hong Kong</h1>
+              </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 adventure-item"> 
+        <div class="thumbnail adventure-thumbnail">
+            <img id = "adventure-taiwan-thumbnail-pic"  class = "adventure-thumbnail-pic" src="images/adventure/taiwan/taiwan_thumbnail.jpeg"  data-toggle="modal" data-target=".adventure-taiwan-modal" alt="...">
+              <div id = "adventure-taiwan-thumbnail-caption"  class="carousel-caption adventure-thumbnail-caption">
+                <h1  data-toggle="modal" data-target=".adventure-taiwan-modal" >Taiwan</h1>
+              </div>
+        </div>
+      </div>
+
+  </div>
+ 
+</div> <!-- End container  -->
+
+<div class="modal fade slide adventure-california-modal" tabindex="-1" role="dialog" aria-labelledby="adventureCaliforniaModal" aria-hidden="true">
+  <div class="modal-dialog modal-md">
+
+    <div class="modal-content">
+
+      <div id="carousel-adventure-california-pics" class="carousel slide" data-ride="carousel">
+
+           <!-- Indicators -->
+           <ol class="carousel-indicators">
+            <li data-target="#carousel-adventure-california-pics" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-adventure-california-pics" data-slide-to="1"></li>
+            <li data-target="#carousel-adventure-california-pics" data-slide-to="2"></li>
+            <li data-target="#carousel-adventure-california-pics" data-slide-to="3"></li>
+            <li data-target="#carousel-adventure-california-pics" data-slide-to="4"></li>
+            <li data-target="#carousel-adventure-california-pics" data-slide-to="5"></li>
+            <li data-target="#carousel-adventure-california-pics" data-slide-to="6"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+              <div class="item active">
+                 <img class="img-responsive" src="images/adventure/california/california-1.jpg" alt="...">
+                 <!-- <div class="carousel-caption">
+                  One Image
+                </div> -->
+               </div>
+            <div class="item">
+                <img class="img-responsive" src="images/adventure/california/california-2.jpg" alt="...">
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="images/adventure/california/california-3.jpg" alt="...">
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="images/adventure/california/california-4.jpg" alt="...">
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="images/adventure/california/california-5.jpg" alt="...">
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="images/adventure/california/california-6.jpg" alt="...">
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="images/adventure/california/california-7.jpg" alt="...">
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-adventure-california-pics" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#carousel-adventure-california-pics" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+
+      </div> <!-- End carousel-adventure-pics -->
+    </div><!-- End modal-content -->
+  </div> <!-- End modal-dialog -->
+</div> <!-- End adventure-california-modal -->
+
+
+<div class="modal fade slide adventure-shanghai-modal" tabindex="-1" role="dialog" aria-labelledby="adventureShanghaiModal" aria-hidden="true">
+  <div class="modal-dialog modal-md">
+
+    <div class="modal-content">
+
+      <div id="carousel-adventure-shanghai-pics" class="carousel slide" data-ride="carousel">
+
+           <!-- Indicators -->
+           <ol class="carousel-indicators">
+            <li data-target="#carousel-adventure-shanghai-pics" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-adventure-shanghai-pics" data-slide-to="1"></li>
+            <li data-target="#carousel-adventure-shanghai-pics" data-slide-to="2"></li>
+            <li data-target="#carousel-adventure-shanghai-pics" data-slide-to="3"></li>
+            <li data-target="#carousel-adventure-shanghai-pics" data-slide-to="4"></li>
+            <li data-target="#carousel-adventure-shanghai-pics" data-slide-to="5"></li>
+            <li data-target="#carousel-adventure-shanghai-pics" data-slide-to="6"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+              <div class="item active">
+                 <img class="img-responsive" src="images/adventure/shanghai/shanghai-1.jpg" alt="...">
+               </div>
+            <div class="item">
+                <img class="img-responsive" src="images/adventure/shanghai/shanghai-2.jpg" alt="...">
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="images/adventure/shanghai/shanghai-3.jpg" alt="...">
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="images/adventure/shanghai/shanghai-4.jpg" alt="...">
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="images/adventure/shanghai/shanghai-5.jpg" alt="...">
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="images/adventure/shanghai/shanghai-6.jpg" alt="...">
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="images/adventure/shanghai/shanghai-7.jpg" alt="...">
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-adventure-shanghai-pics" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#carousel-adventure-shanghai-pics" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+
+      </div> <!-- End carousel-adventure-pics -->
+    </div><!-- End modal-content -->
+  </div> <!-- End modal-dialog -->
+</div> <!-- End adventure-shanghai-modal -->
+
+<div class="modal fade slide adventure-hongkong-modal" tabindex="-1" role="dialog" aria-labelledby="adventureHongkongModal" aria-hidden="true">
+  <div class="modal-dialog modal-md">
+
+    <div class="modal-content">
+
+      <div id="carousel-adventure-hongkong-pics" class="carousel slide" data-ride="carousel">
+
+           <!-- Indicators -->
+           <ol class="carousel-indicators">
+            <li data-target="#carousel-adventure-hongkong-pics" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-adventure-hongkong-pics" data-slide-to="1"></li>
+            <li data-target="#carousel-adventure-hongkong-pics" data-slide-to="2"></li>
+            <li data-target="#carousel-adventure-hongkong-pics" data-slide-to="3"></li>
+            <li data-target="#carousel-adventure-hongkong-pics" data-slide-to="4"></li>
+            <li data-target="#carousel-adventure-hongkong-pics" data-slide-to="5"></li>
+            <li data-target="#carousel-adventure-hongkong-pics" data-slide-to="6"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+              <div class="item active">
+                 <img class="img-responsive" src="images/adventure/hongkong/hongkong-1.jpg" alt="...">
+               </div>
+            <div class="item">
+                <img class="img-responsive" src="images/adventure/hongkong/hongkong-2.jpg" alt="...">
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="images/adventure/hongkong/hongkong-3.jpg" alt="...">
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="images/adventure/hongkong/hongkong-4.jpg" alt="...">
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="images/adventure/hongkong/hongkong-5.jpg" alt="...">
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="images/adventure/hongkong/hongkong-6.jpg" alt="...">
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="images/adventure/hongkong/hongkong-7.jpg" alt="...">
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-adventure-hongkong-pics" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#carousel-adventure-hongkong-pics" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+
+      </div> <!-- End carousel-adventure-pics -->
+    </div><!-- End modal-content -->
+  </div> <!-- End modal-dialog -->
+</div> <!-- End adventure-hongkong-modal -->
+
+
+<div class="modal fade slide adventure-taiwan-modal" tabindex="-1" role="dialog" aria-labelledby="adventureTaiwanModal" aria-hidden="true">
+  <div class="modal-dialog modal-md">
+
+    <div class="modal-content">
+
+      <div id="carousel-adventure-taiwan-pics" class="carousel slide" data-ride="carousel">
+
+           <!-- Indicators -->
+           <ol class="carousel-indicators">
+            <li data-target="#carousel-adventure-taiwan-pics" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-adventure-taiwan-pics" data-slide-to="1"></li>
+            <li data-target="#carousel-adventure-taiwan-pics" data-slide-to="2"></li>
+            <li data-target="#carousel-adventure-taiwan-pics" data-slide-to="3"></li>
+            <li data-target="#carousel-adventure-taiwan-pics" data-slide-to="4"></li>
+            <li data-target="#carousel-adventure-taiwan-pics" data-slide-to="5"></li>
+            <li data-target="#carousel-adventure-taiwan-pics" data-slide-to="6"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+              <div class="item active">
+                 <img class="img-responsive" src="images/adventure/taiwan/taiwan-1.jpg" alt="...">
+               </div>
+            <div class="item">
+                <img class="img-responsive" src="images/adventure/taiwan/taiwan-2.jpg" alt="...">
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="images/adventure/taiwan/taiwan-3.jpg" alt="...">
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="images/adventure/taiwan/taiwan-4.jpg" alt="...">
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="images/adventure/taiwan/taiwan-5.jpg" alt="...">
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="images/adventure/taiwan/taiwan-6.jpg" alt="...">
+            </div>
+            <div class="item">
+                <img class="img-responsive" src="images/adventure/taiwan/taiwan-7.jpg" alt="...">
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-adventure-taiwan-pics" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#carousel-adventure-taiwan-pics" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+
+      </div> <!-- End carousel-adventure-pics -->
+    </div><!-- End modal-content -->
+  </div> <!-- End modal-dialog -->
+</div> <!-- End adventure-taiwan-modal -->
+
+
+<footer class = "section-separator-top">
+<hr class = "footer-hr">
+  <h3 id = "contact-heading">Contact</h3>
+  <div class = "container " id = "contact">
+        <a id = "github-icon" href = "https://github.com/mobiuschang/" target= _blank>
+          <i class = "fa fa-github fa-3x"></i>
+        </a>
+        <a  href = "https://www.linkedin.com/in/chang-wang-8a16408a" target= _blank>
+          <i class = "fa fa-linkedin fa-3x"></i>
+        </a>
+      
+  </div> <!-- End row div -->
+
+</footer>
+
+<script src="libs/jquery-3.1.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+   <script src = "./scripts/main.js"></script>
+</body>
+</html>
